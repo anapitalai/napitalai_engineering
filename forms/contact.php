@@ -1,5 +1,8 @@
 <?php
-  $receiving_email_address = 'help@napitalai.com.pg';
+ 
+
+  // Replace contact@example.com with your real receiving email address
+  $receiving_email_address = 'info@napitalai.com.pg';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -16,13 +19,12 @@
   $contact->subject = $_POST['subject'];
 
   
-  // smtp
-
+  
   $contact->smtp = array(
-    'host' => 'https://ralikumx.raliku.com',
-    'username' => 'help@napitalai.com.pg',
-    'password' => 'help@RNL*24',
-    'port' => '25'
+    'host' => 'ralikumx.raliku.com',
+    'username' => 'info@napitalai.com.pg',
+    'password' => 'keek9Fid',
+    'port' => '587'
   );
  
 
